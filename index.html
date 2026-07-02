@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatify! - Your Craving, Our Priority</title>
+    <link rel="stylesheet" href="cc.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-logo">EATIFY!</div>
+        <div class="menu" onclick="openMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+<div id="sideMenu" class="side-menu">
+    <div class="menu-header">
+
+        <span class="close-btn" onclick="closeMenu()">✕</span>
+
+       
+        <div class="profile-section">
+            <img src="images/users/user.png" alt="User">
+
+            <button class="login-btn">
+                LOG IN/SIGN UP
+            </button>
+        </div>
+
+    </div>
+
+    <div class="menu-content">
+
+        <h4>ACCOUNT</h4>
+
+        <ul>
+            <li><a href="#home">🏠 Home</a></li>
+            <li><a href="#">👤 My Profile</a></li>
+            <li><a href="#">🛍 My Orders</a></li>
+            <li><a href="#">❤️ Favorites</a></li>
+            <li><a href="#">🛒 My Cart</a></li>
+        </ul>
+
+        <h4>GENERAL</h4>
+
+        <ul>
+            <li><a href="#">⚙️ Settings</a></li>
+            <li><a href="#">🔔 Notifications</a></li>
+            <li><a href="#">📞 Help & Support</a></li>
+            <li><a href="#about">ℹ️ About Us</a></li>
+            <li><a href="#contact">📧 Contact Us</a></li>
+        </ul>
+
+    </div>
+
+  
+    <div class="menu-footer">
+
+        <button class="logout-btn">
+             LOG OUT
+        </button>
+
+        <p>Eatify v1.0</p>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="main-logo-area">
+                <img src="images/logo/logo.jpeg" alt="Eatify Logo" class="logo">
+                <p class="tagline">your craving, our priority.</p>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search for your favourite food...">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+<section class="categories-section" id="categories">
+
+    <h2>Browse by Category</h2>
+    <div class="underline"></div>
+
+    <div class="category-grid">
+
+        <div class="category-card" onclick="filterCategory('Pizza')">
+            <div class="img-wrapper">
+                <img src="images/categories/pizza.png" alt="Pizza">
+            </div>
+            <h3>Pizza</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Burger')">
+            <div class="img-wrapper">
+                <img src="images/categories/burger.png" alt="Burger">
+            </div>
+            <h3>Burger</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Chicken')">
+            <div class="img-wrapper">
+                <img src="images/categories/chicken.png" alt="Chicken">
+            </div>
+            <h3>Chicken</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Biryani')">
+            <div class="img-wrapper">
+                <img src="images/categories/biryani.png" alt="Biryani">
+            </div>
+            <h3>Biryani</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Bakery')">
+            <div class="img-wrapper">
+                <img src="images/categories/bakery.png" alt="Bakery">
+            </div>
+            <h3>cakes and bakes</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Drinks')">
+            <div class="img-wrapper">
+                <img src="images/categories/drinks.png" alt="Drinks">
+            </div>
+            <h3>Drinks</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Cafe')">
+            <div class="img-wrapper">
+                <img src="images/categories/cafe.png" alt="Cafe">
+            </div>
+            <h3>Cafe</h3>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('Snacks')">
+            <div class="img-wrapper">
+                <img src="images/categories/snacks.png" alt="Snacks">
+            </div>
+            <h3>Snacks</h3>
+        </div>
+
+     </div>
+
+</section>
+
+    <main class="container">
+        
+       
+        <section class="partners-section" id="partners">
+            <h2>Our Partners</h2>
+            <div class="underline"></div>
+            
+            <div class="partners-grid">
+                <div class="partner-card" onclick="location.href='restaurants/kfc.html'">
+                    <div class="img-wrapper">
+                        <img src="images/partners/kfc.jpg" alt="KFC">
+                    </div>
+                    <h3>KFC, Aranthangi</h3>
+                </div>
+                <div class="partner-card" onclick="location.href='restaurants/dominos.html'">
+                    <div class="img-wrapper">
+                        <img src="images/partners/dominos.jpg" alt="Dominos">
+                    </div>
+                    <h3>Dominos, Aranthangi</h3>
+                </div>
+                <div class="partner-card" onclick="location.href='restaurants/sundaram.html'">
+                    <div class="img-wrapper">
+                        <img src="images/partners/sundaram.jpeg" alt="Sundaram Bakery">
+                    </div>
+                    <h3>Sundaram Bakery, Aranthangi</h3>
+                </div>
+                <div class="partner-card" onclick="location.href='restaurants/mandhipalace.html'">
+                    <div class="img-wrapper">
+                        <img src="images/partners/mandhipalace.jpg" alt="Hotel Mandhi Palace">
+                    </div>
+                    <h3>Hotel Mandhi Palace, Aranthangi</h3>
+                </div>
+                <div class="partner-card" onclick="location.href='restaurants/gourmet.html'">
+                    <div class="img-wrapper">
+                        <img src="images/partners/goumet.jpeg" alt="gourmet">
+                    </div>
+                    <h3>Gourmet, Aranthangi</h3>
+                </div>
+
+                <div class="partner-card" onclick="location.href='restaurants/grill.html'">
+                    <div class="img-wrapper">
+                        <img src="images/partners/grill.jpeg" alt="grill inn">
+                    </div>
+                    <h3>Grill Inn, Aranthangi</h3>
+                </div>
+
+                <div class="partner-card" onclick="location.href='restaurants/koodoo.html'">
+                    <div class="img-wrapper">
+                        <img src="images/partners/koodoo.jpeg" alt="koodoo">
+                    </div>
+                    <h3>Koodoo Restaurant, Aranthangi</h3>
+                </div>
+                <div class="partner-card" onclick="location.href='restaurants/poppys.html'">
+                    <div class="img-wrapper">
+                        <img src="images/partners/poppys.jpg" alt="poppys">
+                    </div>
+                    <h3>Poppys Bakes, Aranthangi</h3>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" id="contact">
+        <p>&copy; 2026 Eatify! All Rights Reserved | #codsoft</p>
+    </footer>
+
+</body>
+</html>
